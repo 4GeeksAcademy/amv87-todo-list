@@ -5,7 +5,7 @@ const Todos = () => {
 	const [newInput, setNewInput ] = useState('');
 	const [newTodo, setNewTodo ] = useState([]);
 	const [item, setItem ] = useState('items');
-	const [notask, setNotask ] = useState('No tasks. Add a task.');
+	const [notask, setNotask ] = useState(<p>No tasks. Add a task.</p>);
 	function addNewTodo() {
 		setNewTodo(newTodo.concat(newInput))
 		setNewInput('')
@@ -24,7 +24,7 @@ const Todos = () => {
 		if (newTodo.length === 2) {
 			setItem('item')
 		} else if (newTodo.length === 1) {
-			setNotask ('No tasks. Add a task.')
+			setNotask (<p>No tasks. Add a task.</p>)
 		} else {
 			setItem('items')
 		}
