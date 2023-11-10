@@ -26,6 +26,7 @@ const Todos = () => {
 			setItem('item')
 		} else if (newTodo.length === 1) {
 			setNotask (<p>No tasks. Add a task.</p>)
+			setItem('items')
 		} else {
 			setItem('items')
 		}
