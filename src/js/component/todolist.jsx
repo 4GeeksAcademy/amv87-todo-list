@@ -6,6 +6,7 @@ const Todos = () => {
 	const [newTodo, setNewTodo ] = useState([]);
 	const [item, setItem ] = useState('items');
 	const [notask, setNotask ] = useState(<p>No tasks. Add a task.</p>);
+	
 	function addNewTodo() {
 		setNewTodo(newTodo.concat(newInput))
 		setNewInput('')
