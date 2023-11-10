@@ -64,3 +64,7 @@ body {
 .element:hover .x-button {
     visibility: visible;
 }
+.element:active .x-button {
+    visibility: visible;
+    background-color: red;
+}
